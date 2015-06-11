@@ -1,0 +1,9 @@
+{
+    "launchers":{
+        "Jasmine":{
+            "command": "jasmine-node ./specs/collectionOperator/collect_last_element_spec.js"
+        }
+    },
+    "launch_in_dev": ["Jasmine"],
+    "src_files": ["./practices/lodash/mylodash/mylodash.js"]
+}
