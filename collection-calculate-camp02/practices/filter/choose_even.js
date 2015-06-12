@@ -3,10 +3,10 @@
 function choose_even(collection) {
 
   //在这里写入代码
-  var filter = require('../lodash/zhuyulonglodash/fiter.js');
-  var evens = filter(collection, function(n){
+  var _ = require('../lodash/mylodash/mylodash.js');
+  var evens = _(collection).filter(function(n){
       return n % 2 == 0;
-  });
+  }).value();
   return evens;
  }
 //   var array=[];
