@@ -2,10 +2,11 @@
 
 function grouping_count(collection) {
   //在这里写入代码.
-var _ = require('../lodash/zhuyulonglodash/each.js');
+var _ = require('../lodash/mylodash/mylodash.js');
 
     var temp = {};
-    _.each(collection, function(n) {
+
+    _(collection).each(function(n){
       temp[n] = temp[n] || 0;
       temp[n] ++ ;
   });
