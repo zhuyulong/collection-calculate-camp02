@@ -39,16 +39,18 @@ _.prototype = {
                 temp = fun(temp, item);
             }
         });
+        this.collection = temp;
+        return this;
     },
-   //  sum: function () {
-   //     var result;
-   //     this.reduce(function (num_a,num_b) {
-   //         result = num_a + num_b;
-   //         return result;
-   //     });
-   //     this.collection = result;
-   //     return this;
-   // },
+    sum: function () {
+       var result;
+       this.reduce(function (num_a,num_b) {
+           result = num_a + num_b;
+           return result;
+       });
+       this.collection = result;
+       return this;
+   },
    // max: function () {
    //      var result;
    //      this.reduce(function (num_a,num_b) {
