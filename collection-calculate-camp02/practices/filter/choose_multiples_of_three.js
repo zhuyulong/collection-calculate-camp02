@@ -3,10 +3,10 @@
 function choose_multiples_of_three(collection) {
 
   //在这里写入代码
-  var filter= require('../lodash/zhuyulonglodash/fiter.js');
-  var evens = filter(collection, function(n){
+  var _ = require('../lodash/mylodash/mylodash.js');
+  var evens = _(collection).filter(function(n){
       return n % 3 == 0;
-  });
+  }).value();
   return evens;
  }
 //   var array=[];
